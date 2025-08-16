@@ -30,7 +30,7 @@ export default function Header() {
       </div>
 
       {/* Navigation */}
-      <nav className="border-gray-200 bg-white/30 shadow w-full backdrop-blur-sm">
+      <nav className="border border-black/20 bg-white/20 shadow-lg backdrop-blur-[4px]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center py-2">
             {/* Desktop Navigation */}
