@@ -30,11 +30,11 @@ export default function Header() {
       </div>
 
       {/* Navigation */}
-      <nav className="border border-black/20 bg-white/20 shadow-lg backdrop-blur-[4px]">
+      <nav className="border border-black/20 bg-black/30 shadow-lg backdrop-blur-[4px]">
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center py-2">
             {/* Desktop Navigation */}
-            <ul className="hidden md:flex flex-wrap justify-center items-center gap-8 text-sm font-medium text-gray-700 w-full">
+            <ul className="hidden md:flex flex-wrap justify-center items-center gap-8 text-sm font-medium text-white w-full">
               {navLinks.map((link, index) => {
                 const isActive = pathname === link.href;
                 return (
