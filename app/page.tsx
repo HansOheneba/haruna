@@ -150,7 +150,9 @@ export default function WeddingPage() {
             </div>
           </div>
           <div className="text-center text-gray-600 ml-8 py-10">
-            <div className="text-sm">20th Dec 2025</div>
+            <div className="text-lg font-serif tracking-widest text-stone-700/80">
+              20 · Dec · 2025
+            </div>
           </div>
         </div>
       </section>
