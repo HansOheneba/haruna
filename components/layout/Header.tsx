@@ -30,11 +30,20 @@ export default function Header() {
       </div>
 
       {/* Navigation */}
-      <nav className="border border-black/20 bg-black/30 shadow-lg backdrop-blur-[4px]">
+      <nav
+        className="
+    bg-gradient-to-br from-white/20 to-white/5
+    backdrop-blur-sm
+    shadow-lg 
+  
+    [box-shadow:inset_0_1px_2px_rgba(255,255,255,0.4),inset_0_-1px_2px_rgba(0,0,0,0.25)]
+     md:py-1
+  "
+      >
         <div className="max-w-6xl mx-auto px-4">
           <div className="flex justify-between items-center py-2">
             {/* Desktop Navigation */}
-            <ul className="hidden md:flex flex-wrap justify-center items-center gap-8 text-sm font-medium text-white w-full">
+            <ul className="hidden md:flex flex-wrap justify-center items-center gap-8 text-sm font-medium mix-blend-difference w-full">
               {navLinks.map((link, index) => {
                 const isActive = pathname === link.href;
                 return (
@@ -57,11 +66,11 @@ export default function Header() {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-gray-700 hover:text-rose-500 transition-colors mx-auto"
+              className="md:hidden text-white hover:text-rose-500 transition-colors ml-auto"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
-              {menuOpen ? <X size={24} /> : <Menu size={24} />}
+              {menuOpen ? <X size={24} color="#e86438" /> : <Menu size={24} color="#e86438" />}
             </button>
           </div>
 
@@ -78,8 +87,8 @@ export default function Header() {
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className={`block py-2 px-4 text-sm font-medium text-gray-700 hover:text-rose-500 hover:bg-rose-50 transition-colors rounded ${
-                        isActive ? "text-rose-500 bg-rose-50" : ""
+                      className={`block py-2 px-4 text-sm font-medium text-black hover:text-rose-500 hover:bg-rose-50 transition-colors rounded ${
+                        isActive ? "text-rose-500 border border-gray-300" : ""
                       }`}
                       onClick={() => setMenuOpen(false)}
                     >

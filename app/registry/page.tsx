@@ -30,10 +30,9 @@ const WeddingRegistry = () => {
           <h1 className="font-serif text-4xl md:text-5xl text-stone-800 mb-4 pt-10">
             Wedding Registry
           </h1>
-          <p className="text-lg text-stone-600 max-w-2xl mx-auto">
-            Your love and presence are the greatest gifts of all. If you’d like
-            to support us as we begin this journey together, we’ve made it
-            simple.
+          <p className="text-lg text-stone-600 max-w-2xl mx-auto italic">
+            “We’d love your presence. But if you insist on a present… cash folds
+            easier than bedsheets.”
           </p>
         </motion.div>
 
@@ -49,8 +48,9 @@ const WeddingRegistry = () => {
             A Simple Way to Share Your Love
           </h3>
           <p className="text-stone-600 mb-8">
-            Instead of a traditional registry, we’ve opened a mobile money line.
-            If you feel moved to bless us in this way, our MoMo is open 24/7.
+            Instead of gifts wrapped in bows and ribbons, we’ve kept things
+            simple with mobile money. If you’d like to bless us in this way,
+            just tap a number below to copy it.
           </p>
 
           <div className="space-y-6">
@@ -77,7 +77,8 @@ const WeddingRegistry = () => {
           </p>
 
           <p className="text-sm text-stone-500 mt-8 italic">
-            Thank you for your thoughtfulness — it means the world to us.
+            Thank you for your love and thoughtfulness — it truly means the
+            world to us.
           </p>
         </motion.div>
       </div>

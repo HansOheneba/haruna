@@ -1,6 +1,7 @@
 // app/page.tsx
 "use client";
 
+import Link from "next/link";
 import { useState, useEffect } from "react";
 
 export default function WeddingPage() {
@@ -52,15 +53,17 @@ export default function WeddingPage() {
 
         {/* Hero Content */}
         <div className="relative h-full flex items-center justify-end pr-8 md:pr-16">
-          <div className="text-right">
+          <div className="text-left">
             <div className="font-script text-rose-500 mb-4">
-              <div className="text-3xl md:text-4xl">Our</div>
-              <div className="text-5xl md:text-6xl font-bold">Love</div>
-              <div className="text-5xl md:text-6xl font-bold">Story</div>
+              <div className="text-xl md:text-4xl">Our</div>
+              <div className="text-2xl md:text-6xl font-bold">Love</div>
+              <div className="text-3xl md:text-6xl font-bold">Story</div>
             </div>
-            <button className="bg-rose-500 hover:bg-rose-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors">
-              Read →
-            </button>
+            <Link href={"/gallery"}>
+              <button className="bg-rose-500 hover:bg-rose-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors">
+                Read →
+              </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -89,7 +92,7 @@ export default function WeddingPage() {
             <br />
             <div className="flex justify-between items-start mb-6">
               <h3 className="text-2xl md:text-3xl font-light text-gray-800 flex-1">
-                Now We Will Get Married
+                This is Just the Beginning
               </h3>
             </div>
           </div>
