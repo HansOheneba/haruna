@@ -23,8 +23,8 @@ export default function Header() {
       <div className="max-w-6xl mx-auto px-4">
         {/* Couple Names */}
         <div className="text-center py-2 bg-transparent">
-          <h1 className="font-script text-2xl md:text-3xl text-rose-500">
-            Haruna & Nanayaa
+          <h1 className="font-script md:text-2xl text-white">
+            Haruna & Nana Yaa
           </h1>
         </div>
       </div>
@@ -50,12 +50,12 @@ export default function Header() {
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className={`hover:text-rose-500 transition-colors pb-1 ${
+                      className={`hover:text-gray-300 pb-1 text-white ${
                         isActive
                           ? "border-b-2"
                           : "border-b-2 border-transparent"
                       }`}
-                      style={isActive ? { borderBottomColor: "#e86438" } : {}}
+                      style={isActive ? { borderBottomColor: "brown" } : {}}
                     >
                       {link.name}
                     </Link>
@@ -70,7 +70,7 @@ export default function Header() {
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
-              {menuOpen ? <X size={24} color="#e86438" /> : <Menu size={24} color="#e86438" />}
+              {menuOpen ? <X size={24} color="brown" /> : <Menu size={24} color="brown" />}
             </button>
           </div>
 
@@ -87,8 +87,8 @@ export default function Header() {
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className={`block py-2 px-4 text-sm font-medium text-black hover:text-rose-500 hover:bg-rose-50 transition-colors rounded ${
-                        isActive ? "text-rose-500 border border-gray-300" : ""
+                      className={`block py-2 px-4 text-sm font-medium text-black hover:bg-rose-50 transition-colors rounded ${
+                        isActive ? "text-gray-500 border border-gray-300" : ""
                       }`}
                       onClick={() => setMenuOpen(false)}
                     >

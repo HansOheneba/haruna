@@ -13,12 +13,12 @@ const WeddingRegistry = () => {
   };
 
   const momoNumbers = [
-    { number: "0209581240", provider: "MTN MoMo" },
-    { number: "0557382234", provider: "Telecel Cash" },
+    { number: "0209581240", provider: "Telecel Cash" },
+    { number: "0557382234", provider: "MTN MoMo" },
   ];
 
   return (
-    <div className="min-h-screen bg-stone-50 py-16 px-4">
+    <div className="min-h-screen py-16 px-4">
       <div className="max-w-3xl mx-auto mt-16">
         {/* Header */}
         <motion.div
@@ -27,10 +27,10 @@ const WeddingRegistry = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="font-serif text-4xl md:text-5xl text-stone-800 mb-4 pt-10">
+          <h1 className="font-serif text-4xl md:text-5xl text-white font-script mb-4 pt-10">
             Wedding Registry
           </h1>
-          <p className="text-lg text-stone-600 max-w-2xl mx-auto italic">
+          <p className="text-md text-white max-w-2xl mx-auto italic">
             “We’d love your presence. But if you insist on a present… cash folds
             easier than bedsheets.”
           </p>

@@ -79,78 +79,22 @@ const GalleryPage = () => {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-rose-50 to-pink-50 py-16 px-4">
+    <div className="min-h-screen py-16 px-4">
       <div className="max-w-7xl mx-auto mt-16">
         {/* Header */}
 
-        {/* Love Story Section */}
-        <div className="bg-white/70 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-xl mb-16 border border-rose-100">
-          <div className="max-w-4xl mx-auto text-center">
-            <div className="mb-8">
-              <h2 className="font-script text-3xl md:text-4xl text-rose-600 mb-6">
-                Our Love Story
-              </h2>
-              <div className="w-24 h-0.5 bg-gradient-to-r from-rose-300 to-pink-300 mx-auto mb-8"></div>
-            </div>
-
-            <div className="prose prose-lg max-w-none text-gray-700 leading-relaxed">
-              <p className="text-xl md:text-2xl font-light italic text-rose-700 mb-8">
-                "Some love stories are written in the stars, but ours was
-                written in stolen glances and shared laughter."
-              </p>
-
-              <div className="grid md:grid-cols-2 gap-8 text-left">
-                <div className="space-y-4">
-                  <p>
-                    Our journey began in the most unexpected way - a chance
-                    encounter that felt like destiny. From the very first moment
-                    we met, there was something magical in the air, a connection
-                    that transcended words and touched our hearts.
-                  </p>
-                  <p>
-                    What started as friendship blossomed into something
-                    beautiful and profound. Through late-night conversations,
-                    shared dreams, and countless moments of pure joy, we
-                    discovered that we had found our perfect match in each
-                    other.
-                  </p>
-                </div>
-                <div className="space-y-4">
-                  <p>
-                    Every day with you feels like a new adventure, filled with
-                    laughter, love, and endless possibilities. You've shown me
-                    what it means to love unconditionally and to be loved in
-                    return with such pure, genuine affection.
-                  </p>
-                  <p>
-                    Today, as we celebrate our love surrounded by family and
-                    friends, we're not just joining two lives together - we're
-                    continuing a beautiful story that began with that first
-                    hello and will last for all eternity.
-                  </p>
-                </div>
-              </div>
-
-              <div className="mt-8 p-6 bg-gradient-to-r from-rose-50 to-pink-50 rounded-2xl border border-rose-100">
-                <p className="text-lg font-medium text-rose-800 italic">
-                  "In you, I've found the love of my life and my closest, truest
-                  friend. Here's to forever and always, my darling Haruna."
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+     
 
         <div className="text-center mb-16">
           <div className="relative inline-block">
             <span className="absolute inset-0 flex items-center justify-center text-6xl md:text-8xl font-bold text-black/5 select-none whitespace-nowrap">
               GALLERY
             </span>
-            <h1 className="font-script text-4xl md:text-5xl text-rose-600 relative mb-4">
+            <h1 className="font-script text-4xl md:text-5xl text-white relative mb-4">
               — Our Gallery —
             </h1>
           </div>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-gray-200 max-w-2xl mx-auto">
             Capturing precious moments and beautiful memories
           </p>
         </div>

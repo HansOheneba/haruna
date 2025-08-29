@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const couple = [
   {
-    name: "Nanayaa",
+    name: "NanaYaa",
     role: "The Bride",
     image: "/images/nanayaa.jpg",
   },
@@ -49,7 +49,7 @@ const partyMembers = [
 
 const WeddingParty = () => {
   return (
-    <div className="min-h-screen bg-stone-50 py-16 px-4">
+    <div className="min-h-screen py-16 px-4">
       <div className="max-w-6xl mx-auto mt-16">
         {/* Header */}
         <motion.div
@@ -58,10 +58,10 @@ const WeddingParty = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="font-serif text-4xl md:text-5xl text-stone-800 mb-4">
+          <h1 className="font-serif text-4xl md:text-5xl text-white font-script mb-4">
             Our Wedding Party
           </h1>
-          <p className="text-lg text-stone-600 max-w-2xl mx-auto">
+          <p className="text-md text-white max-w-2xl mx-auto">
             We are so blessed to be surrounded by these wonderful friends and
             family as we begin our journey together.
           </p>

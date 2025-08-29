@@ -15,7 +15,7 @@ export default function Footer() {
 
   return (
     <motion.footer
-      className="bg-gradient-to-r from-rose-50 to-pink-50 border-t border-rose-100 py-12 px-6"
+      className=" py-12 px-6"
       initial={{ opacity: 0, y: 50 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.2 }}
@@ -25,15 +25,15 @@ export default function Footer() {
         <div className="flex flex-col items-center space-y-8">
           {/* Names */}
           <div className="text-center">
-            <h2 className="font-script text-3xl md:text-4xl text-rose-600 mb-2">
-              Haruna & Nanayaa
+            <h2 className="font-script text-3xl md:text-4xl text-gray-200 mb-2">
+              Haruna & Nana Yaa
             </h2>
-            <div className="w-24 h-0.5 bg-gradient-to-r from-rose-400 to-pink-400 mx-auto"></div>
+            <div className="w-24 h-0.5 bg-gradient-to-r from-amber-950 to-amber-700 mx-auto"></div>
           </div>
 
           {/* Navigation Links */}
           <nav className="w-full">
-            <ul className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-sm font-medium text-gray-600">
+            <ul className="flex flex-wrap justify-center items-center gap-x-8 gap-y-4 text-sm font-medium text-white">
               {navLinks.map((link, index) => (
                 <li key={index}>
                   <Link
@@ -41,7 +41,7 @@ export default function Footer() {
                     className="hover:text-rose-500 transition-colors duration-200 relative group"
                   >
                     {link.name}
-                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-rose-400 transition-all duration-200 group-hover:w-full"></span>
+                    <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-amber-400 transition-all duration-200 group-hover:w-full"></span>
                   </Link>
                 </li>
               ))}
@@ -50,15 +50,15 @@ export default function Footer() {
 
           {/* Decorative divider */}
           <div className="flex items-center space-x-4 w-full max-w-xs">
-            <div className="flex-1 h-px bg-gradient-to-r from-transparent to-rose-200"></div>
+            <div className="flex-1 h-px bg-gradient-to-r from-transparent to-amber-200"></div>
             <motion.div
-              className="text-rose-400 text-xl"
+              className="text-white text-xl"
               whileHover={{ scale: 1.2, rotate: 10 }}
               transition={{ duration: 0.3 }}
             >
               💕
             </motion.div>
-            <div className="flex-1 h-px bg-gradient-to-l from-transparent to-rose-200"></div>
+            <div className="flex-1 h-px bg-gradient-to-l from-transparent to-amber-200"></div>
           </div>
 
           {/* Special Note */}
@@ -68,7 +68,7 @@ export default function Footer() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <p className="text-stone-600 font-light italic">
+            <p className="text-gray-300 font-light italic">
               "Join us in celebrating the beginning of our forever"
             </p>
            

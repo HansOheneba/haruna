@@ -17,7 +17,7 @@ const dancingScript = Dancing_Script({
 });
 
 export const metadata: Metadata = {
-  title: "Haruna & Nanayaa - Wedding",
+  title: "Haruna & Nana Yaa - Wedding",
   description: "Join us for our special day",
   icons: {
     icon: [
@@ -65,9 +65,21 @@ export default function RootLayout({
       <body
         className={`${inter.variable} ${dancingScript.variable} antialiased relative`}
       >
-        <Header />
-        {children}
-        <Footer />
+        <div
+          className="min-h-screen"
+          style={{
+            backgroundImage: "url('/assets/earthBG.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            backgroundRepeat: "no-repeat",
+            backgroundAttachment: "fixed",
+            backgroundColor: "#f5f5f4", // fallback color
+          }}
+        >
+          <Header />
+          {children}
+          <Footer />
+        </div>
       </body>
     </html>
   );

@@ -30,11 +30,11 @@ export default function WeddingPage() {
   }, []);
 
   return (
-    <div className="min-h-screen bg-gray-50">
+    <div className="min-h-screen">
       {/* Header */}
 
       {/* Hero Section */}
-      <section className="relative h-[300px] md:h-[800px] overflow-hidden">
+      <section className="relative h-[300px] md:h-[900px] overflow-hidden">
         {/* Mobile Background */}
         <div
           className="absolute inset-0 bg-cover bg-top bg-no-repeat md:hidden"
@@ -52,21 +52,93 @@ export default function WeddingPage() {
         </div>
 
         {/* Hero Content */}
-        <div className="relative h-full flex items-center justify-end pr-8 md:pr-16">
-          <div className="text-left">
-            <div className="font-script text-rose-500 mb-4">
-              <div className="text-xl md:text-4xl">Our</div>
-              <div className="text-2xl md:text-6xl font-bold">Love</div>
-              <div className="text-3xl md:text-6xl font-bold">Story</div>
+        <div className="relative h-full flex items-center justify-end pr-8 md:pr-16 pt-5">
+          <div className="md:text-left text-right">
+            <div className="font-script text-white mb-2">
+              {/* Countdown stacked like text blocks */}
+
+              <div className="text-2xl md:text-6xl font-bold">
+                {timeLeft.days} Days
+              </div>
+              <div className="text-xl md:text-4xl font-bold">
+                {timeLeft.hours} Hours
+              </div>
+              <div className="text-md md:text-xl font-bold">
+                {timeLeft.minutes} Minutes
+              </div>
             </div>
-            <Link href={"/gallery"}>
-              <button className="bg-rose-500 hover:bg-rose-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors">
-                Read →
+
+            <Link href={"/event-details"}>
+              <button className="bg-white hover:bg-white/80 text-black md:px-6 md:py-2 p-2 rounded-full text-xs md:text-base font-medium shadow-md transition-colors">
+                See Details →
               </button>
             </Link>
           </div>
         </div>
       </section>
+
+      <div className="text-center text-gray-600 py-5 bg-white">
+        <div className="text-lg font-serif tracking-widest text-stone-700/80">
+          20 · Dec · 2025
+        </div>
+      </div>
+
+      {/* Love Story Section */}
+      <div className="p-4 sm:p-6 md:p-10">
+        <div className="max-w-4xl mx-auto text-center bg-white/70 backdrop-blur-sm rounded-3xl p-4 sm:p-8 md:p-12 shadow-xl mb-12 border border-amber-100">
+          <div className="mb-6 sm:mb-8">
+            <h2 className="font-script text-xl sm:text-3xl md:text-4xl lg:text-5xl text-amber-800 mb-4 sm:mb-6">
+              Our Love Story
+            </h2>
+            <div className="w-16 sm:w-20 h-0.5 bg-gradient-to-r from-amber-800 to-lime-900 mx-auto mb-6 sm:mb-8"></div>
+          </div>
+
+          <div className="prose prose-xs sm:prose-sm md:prose-base lg:prose-lg max-w-none text-gray-700 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl font-light italic text-amber-700 mb-6 sm:mb-8">
+              "Some love stories are written in the stars, but ours was written
+              in stolen glances and shared laughter."
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 text-left">
+              <div className="space-y-3 sm:space-y-4">
+                <p>
+                  Our journey began in the most unexpected way - a chance
+                  encounter that felt like destiny. From the very first moment
+                  we met, there was something magical in the air, a connection
+                  that transcended words and touched our hearts.
+                </p>
+                <p>
+                  What started as friendship blossomed into something beautiful
+                  and profound. Through late-night conversations, shared dreams,
+                  and countless moments of pure joy, we discovered that we had
+                  found our perfect match in each other.
+                </p>
+              </div>
+              <div className="space-y-3 sm:space-y-4">
+                <p>
+                  Every day with you feels like a new adventure, filled with
+                  laughter, love, and endless possibilities. You've shown me
+                  what it means to love unconditionally and to be loved in
+                  return with such pure, genuine affection.
+                </p>
+                <p>
+                  Today, as we celebrate our love surrounded by family and
+                  friends, we're not just joining two lives together - we're
+                  continuing a beautiful story that began with that first hello
+                  and will last for all eternity.
+                </p>
+              </div>
+            </div>
+
+            <div className="mt-6 sm:mt-8 p-3 sm:p-6 bg-gradient-to-r from-amber-50/30 to-lime-50/50 rounded-2xl">
+              <p className="text-sm sm:text-base md:text-lg font-medium text-amber-900 italic">
+                "In you, I've found the love of my life and my closest, truest
+                friend. Here's to forever and always, my darling Haruna."
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
 
       {/* Story Section */}
       <section className="py-16 bg-white">
@@ -81,7 +153,7 @@ export default function WeddingPage() {
                 </span>
 
                 {/* Foreground heading */}
-                <h2 className="font-script text-3xl text-rose-500 relative">
+                <h2 className="font-script text-3xl text-amber-900 relative">
                   — Story —
                 </h2>
               </div>
@@ -109,7 +181,7 @@ export default function WeddingPage() {
 
           {/* RSVP Button */}
           <div className="mb-12">
-            <button className="bg-rose-500 hover:bg-rose-600 text-white px-8 py-3 rounded-full font-medium transition-colors">
+            <button className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium transition-colors">
               RSVP
             </button>
           </div>
@@ -117,7 +189,7 @@ export default function WeddingPage() {
           {/* Countdown Timer */}
           <div className="flex justify-center gap-8 md:gap-12">
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-light text-rose-500 mb-1">
+              <div className="text-3xl md:text-4xl font-light text-black mb-1">
                 {timeLeft.days}
               </div>
               <div className="text-sm text-gray-600 uppercase tracking-wide">
@@ -125,7 +197,7 @@ export default function WeddingPage() {
               </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-light text-rose-500 mb-1">
+              <div className="text-3xl md:text-4xl font-light text-black mb-1">
                 {timeLeft.hours}
               </div>
               <div className="text-sm text-gray-600 uppercase tracking-wide">
@@ -133,7 +205,7 @@ export default function WeddingPage() {
               </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-light text-rose-500 mb-1">
+              <div className="text-3xl md:text-4xl font-light text-black mb-1">
                 {timeLeft.minutes}
               </div>
               <div className="text-sm text-gray-600 uppercase tracking-wide">
@@ -141,7 +213,7 @@ export default function WeddingPage() {
               </div>
             </div>
             <div className="text-center">
-              <div className="text-3xl md:text-4xl font-light text-rose-500 mb-1">
+              <div className="text-3xl md:text-4xl font-light text-black mb-1">
                 {timeLeft.seconds}
               </div>
               <div className="text-sm text-gray-600 uppercase tracking-wide">

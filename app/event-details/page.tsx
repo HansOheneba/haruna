@@ -30,11 +30,11 @@ const downloadICS = () => {
   const icsContent = `BEGIN:VCALENDAR
 VERSION:2.0
 BEGIN:VEVENT
-SUMMARY:Wedding of Haruna & Nanayaa
+SUMMARY:Wedding of Haruna & Nana Yaa
 DTSTART:20251220T133000Z
 DTEND:20251220T180000Z
 LOCATION:TRANQUILLUS, Accra
-DESCRIPTION:Join us in celebrating Haruna & Nanayaa's wedding!
+DESCRIPTION:Join us in celebrating Haruna & Nana Yaa's wedding!
 END:VEVENT
 END:VCALENDAR`;
 
@@ -42,7 +42,7 @@ END:VCALENDAR`;
   const url = URL.createObjectURL(blob);
   const link = document.createElement("a");
   link.href = url;
-  link.download = "haruna_nanayaa_wedding.ics";
+  link.download = "haruna_Nana_Yaa_wedding.ics";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
@@ -57,7 +57,7 @@ const WeddingDetails = () => {
   };
 
   return (
-    <div className="min-h-screen bg-stone-50 py-16 px-4">
+    <div className="min-h-screen py-16 px-4">
       <div className="max-w-4xl mx-auto mt-16">
         {/* Header */}
         <motion.div
@@ -69,7 +69,7 @@ const WeddingDetails = () => {
           <h1 className="font-serif text-4xl md:text-5xl text-stone-800 mb-4">
             
           </h1>
-          <div className="text-3xl md:text-4xl font-light text-stone-600 tracking-wider">
+          <div className="text-3xl md:text-4xl font-light text-white tracking-wider">
             12 · 20 · 2025
           </div>
         </motion.div>
