@@ -13,7 +13,7 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "Event Details", href: "/event-details" },
     { name: "Registry", href: "/registry" },
-    { name: "RSVP Form", href: "/rsvp" },
+  { name: "RSVP Form", href: "https://forms.gle/BsNE6FYTApMALS2d9" },
     { name: "Gallery", href: "/gallery" },
     { name: "Wedding Party", href: "/party" },
   ];

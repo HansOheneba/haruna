@@ -181,9 +181,15 @@ export default function WeddingPage() {
 
           {/* RSVP Button */}
           <div className="mb-12">
-            <button className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium transition-colors">
-              RSVP
-            </button>
+            <a
+              href="https://forms.gle/BsNE6FYTApMALS2d9"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <button className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium transition-colors">
+                RSVP
+              </button>
+            </a>
           </div>
 
           {/* Countdown Timer */}
