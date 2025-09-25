@@ -8,7 +8,7 @@ export default function Footer() {
     { name: "Home", href: "/" },
     { name: "Event Details", href: "/event-details" },
     { name: "Registry", href: "/registry" },
-  { name: "RSVP Form", href: "https://forms.gle/BsNE6FYTApMALS2d9" },
+    { name: "RSVP Form", href: "https://forms.gle/BsNE6FYTApMALS2d9" },
     { name: "Gallery", href: "/gallery" },
     { name: "Wedding Party", href: "/party" },
   ];
@@ -71,7 +71,6 @@ export default function Footer() {
             <p className="text-gray-300 font-light italic">
               "Join us in celebrating the beginning of our forever"
             </p>
-           
           </motion.div>
 
           {/* Social icons placeholder - you can add actual social links here */}

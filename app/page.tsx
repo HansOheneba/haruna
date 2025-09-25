@@ -82,58 +82,64 @@ export default function WeddingPage() {
           20 · Dec · 2025
         </div>
       </div>
-
       {/* Love Story Section */}
       <div className="p-4 sm:p-6 md:p-10">
-        <div className="max-w-4xl mx-auto text-center bg-white/70 backdrop-blur-sm rounded-3xl p-4 sm:p-8 md:p-12 shadow-xl mb-12 border border-amber-100">
+        <div className="max-w-4xl mx-auto text-center bg-amber-50/80 backdrop-blur-sm rounded-3xl p-4 sm:p-8 md:p-12 shadow-xl mb-12 border border-amber-200">
           <div className="mb-6 sm:mb-8">
-            <h2 className="font-script text-xl sm:text-3xl md:text-4xl lg:text-5xl text-amber-800 mb-4 sm:mb-6">
-              Our Love Story
+            <h2 className="font-serif tracking-wide text-xl sm:text-3xl md:text-4xl lg:text-5xl text-amber-900 mb-4 sm:mb-6">
+              How Did We Get Here?
             </h2>
-            <div className="w-16 sm:w-20 h-0.5 bg-gradient-to-r from-amber-800 to-lime-900 mx-auto mb-6 sm:mb-8"></div>
+            <div className="w-20 sm:w-24 h-0.5 bg-gradient-to-r from-amber-900 to-lime-800 mx-auto mb-6 sm:mb-8"></div>
           </div>
 
-          <div className="prose prose-xs sm:prose-sm md:prose-base lg:prose-lg max-w-none text-gray-700 leading-relaxed">
-            <p className="text-base sm:text-lg md:text-xl font-light italic text-amber-700 mb-6 sm:mb-8">
-              "Some love stories are written in the stars, but ours was written
-              in stolen glances and shared laughter."
+          <div className="prose prose-xs sm:prose-sm md:prose-base lg:prose-lg max-w-none text-left text-stone-800 leading-relaxed">
+            <p className="text-base sm:text-lg md:text-xl font-light italic text-amber-700 mb-6 sm:mb-8 text-center">
+              "What started out as a shot in the dark with a harmless text
+              message turned out to be the unfolding of a love story that only
+              God could have written."
             </p>
 
-            <div className="grid md:grid-cols-2 gap-4 sm:gap-6 md:gap-8 text-left">
-              <div className="space-y-3 sm:space-y-4">
-                <p>
-                  Our journey began in the most unexpected way - a chance
-                  encounter that felt like destiny. From the very first moment
-                  we met, there was something magical in the air, a connection
-                  that transcended words and touched our hearts.
-                </p>
-                <p>
-                  What started as friendship blossomed into something beautiful
-                  and profound. Through late-night conversations, shared dreams,
-                  and countless moments of pure joy, we discovered that we had
-                  found our perfect match in each other.
-                </p>
-              </div>
-              <div className="space-y-3 sm:space-y-4">
-                <p>
-                  Every day with you feels like a new adventure, filled with
-                  laughter, love, and endless possibilities. You've shown me
-                  what it means to love unconditionally and to be loved in
-                  return with such pure, genuine affection.
-                </p>
-                <p>
-                  Today, as we celebrate our love surrounded by family and
-                  friends, we're not just joining two lives together - we're
-                  continuing a beautiful story that began with that first hello
-                  and will last for all eternity.
-                </p>
-              </div>
+            <div className="space-y-4 sm:space-y-6 md:space-y-8">
+              <p>
+                Nana Yaa first caught Haruna’s eye over a year before they would
+                ever meet when Nicolette, a mutual friend, posted a photo of
+                Nana Yaa on her WhatsApp status. “This your friend fine oo”, he
+                remarked jokingly, and that was all it was then — a quip between
+                friends. But a year later, when the same girl made another
+                appearance on Nicolette’s WhatsApp status, the sentiment
+                graduated to a genuine request to be “linked up“ with this
+                beauty.
+              </p>
+              <p>
+                Nicolette’s reaction to his request, however, was what really
+                piqued his interest. Her earnest and emphatic cautions to Haruna
+                to not “mess things up”, all while singing Nana Yaa's praises,
+                got him curious as to what manner of woman this lady really was.
+              </p>
+              <p>
+                On the side of the link up, Nana Yaa miraculously gave Nicolette
+                the go-ahead for her contact to be given to Haruna. Neither of
+                the two could’ve guessed that this was the beginning of a
+                beautiful journey of friendship and love, a deep connection that
+                they never saw coming.
+              </p>
+              <p>
+                From their very first date to the many memories since, the
+                late-night car rides and endless conversations, the evidence is
+                undeniable that this story was written with a Purpose by the
+                Author Himself.
+              </p>
             </div>
 
-            <div className="mt-6 sm:mt-8 p-3 sm:p-6 bg-gradient-to-r from-amber-50/30 to-lime-50/50 rounded-2xl">
-              <p className="text-sm sm:text-base md:text-lg font-medium text-amber-900 italic">
-                "In you, I've found the love of my life and my closest, truest
-                friend. Here's to forever and always, my darling Haruna."
+            <div className="mt-8 sm:mt-10 p-4 sm:p-6 bg-gradient-to-r from-amber-100/60 to-lime-100/40 rounded-2xl border border-amber-200">
+              <p className="text-sm sm:text-base md:text-lg font-semibold text-amber-900 italic text-center">
+                ... a story of <span className="text-lime-900">LOVE</span> and{" "}
+                <span className="text-lime-900">PURPOSE</span>,<br />
+                ... a world where they are{" "}
+                <span className="tracking-widest">#FOREVERENTWINED</span>.
+              </p>
+              <p className="mt-3 text-amber-700 font-medium text-center">
+                #LETTHEFUNBEGIN!
               </p>
             </div>
           </div>

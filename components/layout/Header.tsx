@@ -13,7 +13,7 @@ export default function Header() {
     { name: "Home", href: "/" },
     { name: "Event Details", href: "/event-details" },
     { name: "Registry", href: "/registry" },
-  { name: "RSVP Form", href: "https://forms.gle/BsNE6FYTApMALS2d9" },
+    { name: "RSVP Form", href: "https://forms.gle/BsNE6FYTApMALS2d9" },
     { name: "Gallery", href: "/gallery" },
     { name: "Wedding Party", href: "/party" },
   ];
@@ -70,7 +70,11 @@ export default function Header() {
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
-              {menuOpen ? <X size={24} color="brown" /> : <Menu size={24} color="brown" />}
+              {menuOpen ? (
+                <X size={24} color="brown" />
+              ) : (
+                <Menu size={24} color="brown" />
+              )}
             </button>
           </div>
 
