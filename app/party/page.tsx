@@ -16,9 +16,9 @@ const couple = [
 
 const partyMembers = [
   {
-    name: "Ama Serwaa",
+    name: "Sandra Asiedu-Mantey",
     role: "Maid of Honor",
-    image: "/images/ama.jpg",
+    image: "/assets/sandra.jpg",
   },
   {
     name: "Kojo Mensah",
