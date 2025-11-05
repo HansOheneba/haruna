@@ -27,7 +27,7 @@ const WeddingRegistry = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="font-serif text-4xl md:text-5xl text-white font-script mb-4 pt-10">
+          <h1 className="font-serif text-4xl md:text-5xl text-white font-playfair mb-4 pt-10">
             Wedding Registry
           </h1>
           <p className="text-md text-white max-w-2xl mx-auto italic">
@@ -38,22 +38,25 @@ const WeddingRegistry = () => {
 
         {/* Registry Card */}
         <motion.div
-          className="bg-white rounded-lg shadow-sm border border-stone-200 p-8 md:p-12 mb-12 text-center"
+          className="bg-white rounded-2xl shadow-sm border border-stone-200 p-8 md:p-12 mb-12 text-center"
           initial={{ opacity: 0, y: 30 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <Gift className="w-12 h-12 text-rose-500 mx-auto mb-6" />
-          <h3 className="font-serif text-2xl text-stone-800 mb-4">
+
+          <h3 className="font-playfair text-2xl text-stone-800 mb-4">
             A Simple Way to Share Your Love
           </h3>
-          <p className="text-stone-600 mb-8">
-            Instead of gifts wrapped in bows and ribbons, we’ve kept things
-            simple with mobile money. If you’d like to bless us in this way,
-            just tap a number below to copy it.
+
+          <p className="text-stone-600 mb-8 leading-relaxed">
+            Instead of gifts wrapped in bows and ribbons, we've kept things
+            simple with cash. You may send your cash gift via mobile money. If
+            you'd like to bless us in this way, just tap a number below to copy
+            it.
           </p>
 
-          <div className="space-y-6">
+          <div className="space-y-6 mb-8">
             {momoNumbers.map(({ number, provider }) => (
               <div key={number} className="text-center">
                 <button
@@ -72,11 +75,16 @@ const WeddingRegistry = () => {
             ))}
           </div>
 
-          <p className="text-sm text-stone-500 mt-6 italic">
+          <p className="text-sm text-stone-500 mb-6 italic">
             Tap or click on a number to copy it easily.
           </p>
 
-          <p className="text-sm text-stone-500 mt-8 italic">
+          <p className="text-stone-600 mb-4 leading-relaxed">
+            Alternatively, you may present your cash gift at the gift station at
+            the wedding venue. Envelopes will be made available.
+          </p>
+
+          <p className="text-sm text-stone-500 italic">
             Thank you for your love and thoughtfulness — it truly means the
             world to us.
           </p>

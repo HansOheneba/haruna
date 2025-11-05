@@ -2,6 +2,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 
 export default function WeddingPage() {
@@ -33,47 +34,44 @@ export default function WeddingPage() {
     <div className="min-h-screen">
       {/* Header */}
 
-      {/* Hero Section */}
-      <section className="relative h-[300px] md:h-[900px] overflow-hidden">
-        {/* Mobile Background */}
-        <div
-          className="absolute inset-0 bg-cover bg-top bg-no-repeat md:hidden"
-          style={{ backgroundImage: "url(/assets/harunaMobi.jpg)" }}
-        >
-          <div className="absolute inset-0 bg-black/20"></div>
+      {/* Hero Content */}
+      <section className="relative h-[93vh] w-full flex flex-col items-center justify-center text-center overflow-hidden bg-black">
+        {/* Background Watermark Image */}
+        <div className="absolute inset-0">
+          <Image
+            src="/assets/haruna.jpg"
+            alt="Wedding Background"
+            fill
+            className="object-cover opacity-100 blur-xs"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
         </div>
 
-        {/* Desktop Background */}
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat hidden md:block"
-          style={{ backgroundImage: "url(/assets/haruna.jpg)" }}
-        >
-          <div className="absolute inset-0 bg-black/20"></div>
-        </div>
+        {/* Main Content */}
+        <div className="relative z-10 font-script flex flex-col items-center justify-center px-4">
+          {/* Names */}
+          <h1 className=" text-4xl md:text-7xl font-bold text-white leading-tight tracking-wider">
+            NANA YAA <br className="hidden md:block" /> DUAH
+          </h1>
+          <p className="text-white text-xl md:text-3xl italic my-2">&amp;</p>
+          <h1 className=" text-4xl md:text-7xl font-bold text-white leading-tight tracking-wider mb-8">
+            HARUNA <br className="hidden md:block" /> SULEMANA
+          </h1>
 
-        {/* Hero Content */}
-        <div className="relative h-full flex items-center justify-end pr-8 md:pr-16 pt-5">
-          <div className="md:text-left text-right">
-            <div className="font-script text-white mb-2">
-              {/* Countdown stacked like text blocks */}
-
-              <div className="text-2xl md:text-6xl font-bold">
-                {timeLeft.days} Days
-              </div>
-              <div className="text-xl md:text-4xl font-bold">
-                {timeLeft.hours} Hours
-              </div>
-              <div className="text-md md:text-xl font-bold">
-                {timeLeft.minutes} Minutes
-              </div>
-            </div>
-
-            <Link href={"/event-details"}>
-              <button className="bg-white hover:bg-white/80 text-black md:px-6 md:py-2 p-2 rounded-full text-xs md:text-base font-medium shadow-md transition-colors">
-                See Details →
-              </button>
-            </Link>
+          {/* Countdown */}
+          <div className="text-white mb-6 space-x-2 flex justify-center items-center">
+            <p className="text-md font-medium">{timeLeft.days} Days</p>
+            <p className="text-md font-medium">{timeLeft.hours} Hours</p>
+            <p className="text-md font-medium">{timeLeft.minutes} Minutes</p>
           </div>
+
+          {/* Button */}
+          <Link href="/event-details">
+            <button className="bg-white hover:bg-white/80 text-black md:px-6 md:py-2 p-2 rounded-full text-xs md:text-base font-medium shadow-md transition-colors">
+              See Details →
+            </button>
+          </Link>
         </div>
       </section>
 
@@ -101,42 +99,36 @@ export default function WeddingPage() {
 
             <div className="space-y-4 sm:space-y-6 md:space-y-8">
               <p>
-                Nana Yaa first caught Haruna’s eye over a year before they would
-                ever meet when Nicolette, a mutual friend, posted a photo of
-                Nana Yaa on her WhatsApp status. “This your friend fine oo”, he
-                remarked jokingly, and that was all it was then — a quip between
-                friends. But a year later, when the same girl made another
-                appearance on Nicolette’s WhatsApp status, the sentiment
-                graduated to a genuine request to be “linked up“ with this
-                beauty.
-              </p>
-              <p>
-                Nicolette’s reaction to his request, however, was what really
-                piqued his interest. Her earnest and emphatic cautions to Haruna
-                to not “mess things up”, all while singing Nana Yaa's praises,
-                got him curious as to what manner of woman this lady really was.
-              </p>
-              <p>
-                On the side of the link up, Nana Yaa miraculously gave Nicolette
-                the go-ahead for her contact to be given to Haruna. Neither of
-                the two could’ve guessed that this was the beginning of a
-                beautiful journey of friendship and love, a deep connection that
-                they never saw coming.
-              </p>
-              <p>
-                From their very first date to the many memories since, the
-                late-night car rides and endless conversations, the evidence is
-                undeniable that this story was written with a Purpose by the
-                Author Himself.
+                What started out as a shot in the dark with a harmless text
+                message turned out to be the unfolding of a love story that only
+                God could have written. <br /> Nana Yaa first caught Haruna’s eye over
+                a year before they would ever meet when Nicolette, a mutual
+                friend, posted a photo of Nana Yaa on her WhatsApp status. “This
+                your friend fine oo”, he remarked jokingly, and that was all it
+                was then - a quip between friends. But a year later, when the
+                same girl made another appearance on Nicolette’s WhatsApp
+                status, the sentiment graduated to a genuine request to be
+                “linked up“ with this beauty. Nicolette’s reaction to his
+                request, however, was what really piqued his interest. Her
+                earnest and emphatic cautions to Haruna to not “mess things up”,
+                all while singing Nana Yaa's praises, got him curious as to what
+                manner of woman this lady really was. And on the other side of
+                the link up, Nana Yaa miraculously gave Nicolette the go-ahead
+                for her contact to be given to Haruna. <br /> Neither of the two
+                could’ve guessed that this was the beginning of a beautiful
+                journey of friendship and love, a deep connection that they
+                never saw coming. From their very first date to the many
+                memories since, the late-night car rides and endless
+                conversations, the evidence is undeniable that this story was
+                written with a Purpose by the Author Himself.
               </p>
             </div>
 
-            <div className="mt-8 sm:mt-10 p-4 sm:p-6 bg-gradient-to-r from-amber-100/60 to-lime-100/40 rounded-2xl border border-amber-200">
+            <div className="mt-8 sm:mt-10 p-4 sm:p-6">
               <p className="text-sm sm:text-base md:text-lg font-semibold text-amber-900 italic text-center">
-                ... a story of <span className="text-lime-900">LOVE</span> and{" "}
-                <span className="text-lime-900">PURPOSE</span>,<br />
-                ... a world where they are{" "}
-                <span className="tracking-widest">#FOREVERENTWINED</span>.
+                ... a story of LOVE and PURPOSE,
+                <br />
+                <span className="tracking-widest">#SealedWithLove</span>.
               </p>
               <p className="mt-3 text-amber-700 font-medium text-center">
                 #LETTHEFUNBEGIN!
@@ -149,16 +141,15 @@ export default function WeddingPage() {
       {/* Story Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          {/* Story Header */}
-          <div className="mb-8">
+          
+          {/* <div className="mb-8">
             <div className="flex justify-center">
               <div className="relative inline-block text-center">
-                {/* Background ghost text */}
+               
                 <span className="absolute inset-0 flex items-center justify-center text-6xl font-bold text-black/10 select-none">
                   LOVE STORY
                 </span>
 
-                {/* Foreground heading */}
                 <h2 className="font-script text-3xl text-amber-900 relative">
                   — Story —
                 </h2>
@@ -173,7 +164,7 @@ export default function WeddingPage() {
                 This is Just the Beginning
               </h3>
             </div>
-          </div>
+          </div> */}
 
           {/* Story Content */}
           <div className="mb-8">

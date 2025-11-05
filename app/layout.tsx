@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter, Dancing_Script } from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -10,10 +10,10 @@ const inter = Inter({
   variable: "--font-inter",
 });
 
-const dancingScript = Dancing_Script({
+const playfair = Playfair_Display({
   subsets: ["latin"],
   display: "swap",
-  variable: "--font-dancing-script",
+  variable: "--font-dancing-script", // keep same variable name so no other file breaks
 });
 
 export const metadata: Metadata = {
@@ -63,7 +63,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${inter.variable} ${dancingScript.variable} antialiased relative`}
+        className={`${inter.variable} ${playfair.variable} antialiased relative`}
       >
         <div
           className="min-h-screen"

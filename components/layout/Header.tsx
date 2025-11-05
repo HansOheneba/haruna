@@ -20,14 +20,14 @@ export default function Header() {
 
   return (
     <header className="shadow-sm fixed top-0 z-50 w-full">
-      <div className="max-w-6xl mx-auto px-4">
-        {/* Couple Names */}
+      {/* <div className="max-w-6xl mx-auto px-4">
+      
         <div className="text-center py-2 bg-transparent">
           <h1 className="font-script md:text-2xl text-white">
             Haruna & Nana Yaa
           </h1>
         </div>
-      </div>
+      </div> */}
 
       {/* Navigation */}
       <nav

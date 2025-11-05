@@ -85,7 +85,7 @@ const WeddingDetails = () => {
             {/* Reception Details */}
             <div>
               <h3 className="font-serif text-2xl text-stone-800 mb-6">
-                Reception Details
+                White Wedding Ceremony
               </h3>
               <div className="space-y-4">
                 <div className="flex items-start gap-3">

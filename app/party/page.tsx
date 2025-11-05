@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 
 const couple = [
   {
-    name: "NanaYaa",
+    name: "Nana Yaa",
     role: "The Bride",
     image: "/images/nanayaa.jpg",
   },
@@ -25,26 +25,26 @@ const partyMembers = [
     role: "Best Man",
     image: "/images/kojo.jpg",
   },
-  {
-    name: "Adwoa Nyarko",
-    role: "Bridesmaid",
-    image: "/images/adwoa.jpg",
-  },
-  {
-    name: "Yaw Owusu",
-    role: "Groomsman",
-    image: "/images/yaw.jpg",
-  },
-  {
-    name: "Akua Afriyie",
-    role: "Bridesmaid",
-    image: "/images/akua.jpg",
-  },
-  {
-    name: "Kwame Boateng",
-    role: "Groomsman",
-    image: "/images/kwame.jpg",
-  },
+  // {
+  //   name: "Adwoa Nyarko",
+  //   role: "Bridesmaid",
+  //   image: "/images/adwoa.jpg",
+  // },
+  // {
+  //   name: "Yaw Owusu",
+  //   role: "Groomsman",
+  //   image: "/images/yaw.jpg",
+  // },
+  // {
+  //   name: "Akua Afriyie",
+  //   role: "Bridesmaid",
+  //   image: "/images/akua.jpg",
+  // },
+  // {
+  //   name: "Kwame Boateng",
+  //   role: "Groomsman",
+  //   image: "/images/kwame.jpg",
+  // },
 ];
 
 const WeddingParty = () => {
