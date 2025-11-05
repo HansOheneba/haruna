@@ -5,12 +5,12 @@ const couple = [
   {
     name: "Nana Yaa",
     role: "The Bride",
-    image: "/images/nanayaa.jpg",
+    image: "/assets/nana.jpeg",
   },
   {
     name: "Haruna",
     role: "The Groom",
-    image: "/images/haruna.jpg",
+    image: "/assets/harunaImg.jpg",
   },
 ];
 
