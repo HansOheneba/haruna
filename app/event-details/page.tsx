@@ -66,9 +66,7 @@ const WeddingDetails = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
         >
-          <h1 className="font-serif text-4xl md:text-5xl text-stone-800 mb-4">
-            
-          </h1>
+          <h1 className="font-serif text-4xl md:text-5xl text-stone-800 mb-4"></h1>
           <div className="text-3xl md:text-4xl font-light text-white tracking-wider">
             12 · 20 · 2025
           </div>
@@ -101,7 +99,7 @@ const WeddingDetails = () => {
                   <Clock className="w-5 h-5 text-stone-500 mt-0.5" />
                   <div>
                     <p className="font-medium text-stone-800">Time</p>
-                    <p className="text-stone-600">1:30 PM</p>
+                    <p className="text-stone-600">2:00 PM</p>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -130,15 +128,15 @@ const WeddingDetails = () => {
               </h3>
               <div className="space-y-4">
                 <div className="flex justify-between items-center py-3 border-b border-stone-100">
-                  <span className="font-medium text-stone-800">1:30 PM</span>
+                  <span className="font-medium text-stone-800">2:00 PM</span>
                   <span className="text-stone-600">Ceremony</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-stone-100">
-                  <span className="font-medium text-stone-800">3:00 PM</span>
-                  <span className="text-stone-600">Reception & Lunch</span>
+                  <span className="font-medium text-stone-800">5:00 PM</span>
+                  <span className="text-stone-600">Reception</span>
                 </div>
                 <div className="flex justify-between items-center py-3 border-b border-stone-100">
-                  <span className="font-medium text-stone-800">7:00 PM</span>
+                  <span className="font-medium text-stone-800">8:00 PM</span>
                   <span className="text-stone-600">After Party</span>
                 </div>
               </div>
@@ -217,8 +215,6 @@ const WeddingDetails = () => {
             ))}
           </div>
         </motion.div>
-
-
       </div>
     </div>
   );
