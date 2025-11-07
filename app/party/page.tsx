@@ -21,9 +21,9 @@ const partyMembers = [
     image: "/assets/sandra.jpg",
   },
   {
-    name: "Kojo Mensah",
+    name: "Mustapha Sulemana",
     role: "Best Man",
-    image: "/images/kojo.jpg",
+    image: "/assets/mustapha.jpg",
   },
   // {
   //   name: "Adwoa Nyarko",
