@@ -39,7 +39,7 @@ export default function WeddingPage() {
         {/* Background Watermark Image */}
         <div className="absolute inset-0">
           <Image
-            src="/assets/hero.jpg"
+            src="/assets/next1.jpg"
             alt="Wedding Background"
             fill
             className="object-cover opacity-100 blur-xs"

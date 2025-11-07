@@ -68,7 +68,7 @@ export default function RootLayout({
         <div
           className="min-h-screen"
           style={{
-            backgroundImage: "url('/assets/earthBG.jpg')",
+            backgroundImage: "url('/assets/next9.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
