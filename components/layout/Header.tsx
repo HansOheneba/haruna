@@ -19,45 +19,39 @@ export default function Header() {
   ];
 
   return (
-    <header className="shadow-sm fixed top-0 z-50 w-full">
-      {/* <div className="max-w-6xl mx-auto px-4">
-      
-        <div className="text-center py-2 bg-transparent">
-          <h1 className="font-script md:text-2xl text-white">
-            Haruna & Nana Yaa
-          </h1>
-        </div>
-      </div> */}
-
-      {/* Navigation */}
+    <header className="fixed top-0 z-50 w-full transition-all duration-300">
       <nav
         className="
-    bg-gradient-to-br from-white/20 to-white/5
-    backdrop-blur-sm
-    shadow-lg 
-  
-    [box-shadow:inset_0_1px_2px_rgba(255,255,255,0.4),inset_0_-1px_2px_rgba(0,0,0,0.25)]
-     md:py-1
-  "
+          bg-white/60 backdrop-blur-md
+          border-b border-white/30
+          shadow-sm
+        "
       >
         <div className="max-w-6xl mx-auto px-4">
-          <div className="flex justify-between items-center py-2">
+          <div className="flex justify-between items-center py-3">
+            {/* Logo / Names */}
+            <h1 className="font-serif text-lg md:text-xl text-[#1B1856] tracking-wide italic">
+              Haruna & Nana Yaa
+            </h1>
+
             {/* Desktop Navigation */}
-            <ul className="hidden md:flex flex-wrap justify-center items-center gap-8 text-sm font-medium mix-blend-difference w-full">
+            <ul className="hidden md:flex items-center gap-8 text-sm font-light text-[#1B1856]">
               {navLinks.map((link, index) => {
                 const isActive = pathname === link.href;
                 return (
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className={`hover:text-gray-300 pb-1 text-white ${
-                        isActive
-                          ? "border-b-2"
-                          : "border-b-2 border-transparent"
-                      }`}
-                      style={isActive ? { borderBottomColor: "brown" } : {}}
+                      className={`
+                        relative transition-colors duration-200
+                        hover:text-[#C2A469]
+                        ${isActive ? "text-[#C2A469]" : "text-[#1B1856]"}
+                      `}
                     >
                       {link.name}
+                      {isActive && (
+                        <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-gradient-to-r from-[#C2A469] to-[#E6D7A3]" />
+                      )}
                     </Link>
                   </li>
                 );
@@ -66,15 +60,11 @@ export default function Header() {
 
             {/* Mobile Menu Button */}
             <button
-              className="md:hidden text-white hover:text-rose-500 transition-colors ml-auto"
+              className="md:hidden text-[#1B1856]"
               onClick={() => setMenuOpen(!menuOpen)}
               aria-label="Toggle menu"
             >
-              {menuOpen ? (
-                <X size={24} color="brown" />
-              ) : (
-                <Menu size={24} color="brown" />
-              )}
+              {menuOpen ? <X size={24} /> : <Menu size={24} />}
             </button>
           </div>
 
@@ -91,9 +81,15 @@ export default function Header() {
                   <li key={index}>
                     <Link
                       href={link.href}
-                      className={`block py-2 px-4 text-sm font-medium text-black hover:bg-rose-50 transition-colors rounded ${
-                        isActive ? "text-gray-500 border border-gray-300" : ""
-                      }`}
+                      className={`
+                        block py-2 px-4 text-sm font-medium rounded-lg
+                        transition-all duration-200
+                        ${
+                          isActive
+                            ? "bg-[#F8F5EF] text-[#C2A469]"
+                            : "text-[#1B1856] hover:bg-[#FAF8F3]"
+                        }
+                      `}
                       onClick={() => setMenuOpen(false)}
                     >
                       {link.name}

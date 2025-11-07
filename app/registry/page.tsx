@@ -43,7 +43,7 @@ const WeddingRegistry = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
         >
-          <Gift className="w-12 h-12 text-rose-500 mx-auto mb-6" />
+          <Gift className="w-12 h-12 text-[#C2A469] mx-auto mb-6" />
 
           <h3 className="font-playfair text-2xl text-stone-800 mb-4">
             A Simple Way to Share Your Love
