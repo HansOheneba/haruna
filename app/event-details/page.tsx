@@ -103,8 +103,8 @@ const WeddingDetails = () => {
           transition={{ duration: 0.8 }}
         >
           <h1 className="font-serif text-4xl md:text-5xl text-stone-800 mb-4"></h1>
-          <div className="text-3xl md:text-4xl font-light text-white tracking-wider">
-            12 · 20 · 2025
+          <div className="text-2xl font-serif tracking-widest text-white">
+            20 · Dec · 2025
           </div>
         </motion.div>
 

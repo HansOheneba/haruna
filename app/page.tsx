@@ -51,11 +51,11 @@ export default function WeddingPage() {
         {/* Main Content */}
         <div className="relative z-10 font-script flex flex-col items-center justify-center px-4">
           {/* Names */}
-          <h1 className=" text-4xl md:text-7xl font-bold text-white leading-tight tracking-wider">
+          <h1 className=" text-4xl md:text-7xl font-thin text-white leading-tight tracking-wider">
             NANA YAA <br className="block" /> DUAH
           </h1>
-          <p className="text-white text-3xl md:text-3xl italic my-2">&amp;</p>
-          <h1 className=" text-4xl md:text-7xl font-bold text-white leading-tight tracking-wider mb-8">
+          <p className="text-white text-3xl font-thin md:text-3xl my-2">and</p>
+          <h1 className=" text-4xl md:text-7xl font-thin text-white leading-tight tracking-wider mb-8">
             HARUNA <br className="hidden md:block" /> SULEMANA
           </h1>
 
@@ -84,14 +84,14 @@ export default function WeddingPage() {
       <div className="p-4 sm:p-6 md:p-10">
         <div className="max-w-4xl mx-auto text-center bg-amber-50/80 backdrop-blur-sm rounded-3xl p-4 sm:p-8 md:p-12 shadow-xl mb-12 border border-amber-200">
           <div className="mb-6 sm:mb-8">
-            <h2 className="font-serif tracking-wide text-xl sm:text-3xl md:text-4xl lg:text-5xl text-amber-900 mb-4 sm:mb-6">
+            <h2 className="font-serif tracking-wide text-xl sm:text-3xl md:text-4xl lg:text-5xl mb-4 sm:mb-6">
               How Did We Get Here?
             </h2>
             <div className="w-20 sm:w-24 h-0.5 bg-gradient-to-r from-amber-900 to-lime-800 mx-auto mb-6 sm:mb-8"></div>
           </div>
 
           <div className="prose prose-xs sm:prose-sm md:prose-base lg:prose-lg max-w-none text-left text-stone-800 leading-relaxed">
-            <p className="text-base sm:text-lg md:text-xl font-light italic text-amber-700 mb-6 sm:mb-8 text-center">
+            <p className="text-base sm:text-lg md:text-xl font-light italic mb-6 sm:mb-8 text-center">
               "What started out as a shot in the dark with a harmless text
               message turned out to be the unfolding of a love story that only
               God could have written."
@@ -125,7 +125,7 @@ export default function WeddingPage() {
             </div>
 
             <div className="mt-8 sm:mt-10 p-4 sm:p-6">
-              <p className="text-sm sm:text-base md:text-lg font-semibold text-amber-900 italic text-center">
+              <p className="text-sm sm:text-base md:text-lg font-semibold italic text-center">
                 ... a story of LOVE and PURPOSE,
                 <br />
                 <span className="tracking-widest">#SealedWithLove</span>.
@@ -178,7 +178,7 @@ export default function WeddingPage() {
 
           {/* RSVP Button */}
           <div className="mb-12">
-            <a
+            <Link
               href="https://forms.gle/BsNE6FYTApMALS2d9"
               target="_blank"
               rel="noopener noreferrer"
@@ -186,7 +186,7 @@ export default function WeddingPage() {
               <button className="bg-black hover:bg-gray-800 text-white px-8 py-3 rounded-full font-medium transition-colors">
                 RSVP
               </button>
-            </a>
+            </Link>
           </div>
 
           {/* Countdown Timer */}
