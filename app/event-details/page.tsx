@@ -6,22 +6,58 @@ import { useState } from "react";
 const faqs = [
   {
     question: "What should I wear?",
+    answer: "Black-tie or cocktail attire.",
+  },
+  {
+    question: "How do I RSVP?",
     answer:
-      "We recommend elegant attire. Dress code details will be shared soon.",
+      "Click the RSVP button in the navigation menu or follow the link in your invitation to fill the RSVP form.",
+  },
+  {
+    question: "When do I need to RSVP by?",
+    answer: "Deadline to RSVP is 30th November, 2025.",
   },
   {
     question: "Can I bring a plus one?",
     answer:
-      "Please check your invitation for guest details. This will be confirmed individually.",
+      "Please check the RSVP form for guest details. This will be confirmed individually.",
+  },
+  {
+    question: "Are children allowed?",
+    answer:
+      "Although we love your little ones, we have made the decision for this to be a fun weekend for the adults so that everyone can relax and enjoy the happy occasion.",
+  },
+  {
+    question: "Is the wedding indoors or outdoors?",
+    answer: "The ceremony will take place in an outdoor garden.",
+  },
+  {
+    question: "Is the venue wheelchair accessible?",
+    answer: "Yes, the venue is wheelchair accessible.",
   },
   {
     question: "Is there parking available?",
-    answer: "Yes, ample parking is available at the TRANQUILLUS venue.",
+    answer: "Yes, ample parking is available at the venue.",
   },
   {
-    question: "Will there be vegetarian options?",
+    question: "What time should I arrive at the venue?",
     answer:
-      "Yes, we'll have a variety of meal options including vegetarian dishes.",
+      "The ceremony will begin at _ prompt and all guests should be seated by _.",
+  },
+  {
+    question: "Will there be food and drinks served?",
+    answer:
+      "Yes, there will be a reception following the ceremony at the same venue.",
+  },
+  {
+    question: "What can I bring you as a gift?",
+    answer:
+      "Thank you for your consideration. We will be accepting cash gifts via mobile money or physically at the gift station at the venue. Kindly click the Registry button in the navigation menu for details on how to give your gift.",
+  },
+  {
+    question: "Can we take photos at the ceremony?",
+    answer:
+      "Yes, you may take photos from your seats. Please try to keep out of the way of the professionals during the ceremony.",
   },
 ];
 
@@ -168,6 +204,7 @@ const WeddingDetails = () => {
           </div>
         </motion.div>
 
+        {/* FAQ Section */}
         <motion.div
           className="bg-white rounded-lg shadow-sm border border-stone-200 p-8 md:p-12 mb-12"
           initial={{ opacity: 0, y: 30 }}

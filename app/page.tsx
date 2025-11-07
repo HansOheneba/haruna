@@ -52,9 +52,9 @@ export default function WeddingPage() {
         <div className="relative z-10 font-script flex flex-col items-center justify-center px-4">
           {/* Names */}
           <h1 className=" text-4xl md:text-7xl font-bold text-white leading-tight tracking-wider">
-            NANA YAA <br className="hidden md:block" /> DUAH
+            NANA YAA <br className="block" /> DUAH
           </h1>
-          <p className="text-white text-xl md:text-3xl italic my-2">&amp;</p>
+          <p className="text-white text-3xl md:text-3xl italic my-2">&amp;</p>
           <h1 className=" text-4xl md:text-7xl font-bold text-white leading-tight tracking-wider mb-8">
             HARUNA <br className="hidden md:block" /> SULEMANA
           </h1>
