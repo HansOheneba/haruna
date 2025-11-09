@@ -10,7 +10,7 @@ const couple = [
   {
     name: "Haruna",
     role: "The Groom",
-    image: "/assets/harunaImg.jpg",
+    image: "/assets/haruna4.jpeg",
   },
 ];
 

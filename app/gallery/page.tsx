@@ -133,7 +133,7 @@ const galleryImages = [
   },
   {
     id: 16,
-    src: "/assets/gal8.jpeg",
+    src: "/assets/gal28.jpeg",
     thumb: "/assets/gal8.jpeg",
     size: "1920-1080",
     alt: "Wedding Photo 7",
@@ -155,6 +155,143 @@ const galleryImages = [
     alt: "Wedding Photo 7",
     title: "Perfect Day",
   },
+  {
+    id: 19,
+    src: "/assets/gal11.jpeg",
+    thumb: "/assets/gal11.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 8",
+    title: "Perfect Day",
+  },
+  {
+    id: 20,
+    src: "/assets/gal12.jpeg",
+    thumb: "/assets/gal12.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 9",
+    title: "Perfect Day",
+  },
+  {
+    id: 21,
+    src: "/assets/gal13.jpeg",
+    thumb: "/assets/gal13.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 10",
+    title: "Perfect Day",
+  },
+  {
+    id: 22,
+    src: "/assets/gal14.jpeg",
+    thumb: "/assets/gal14.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 11",
+    title: "Perfect Day",
+  },
+  {
+    id: 23,
+    src: "/assets/gal15.jpeg",
+    thumb: "/assets/gal15.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 12",
+    title: "Perfect Day",
+  },
+  {
+    id: 24,
+    src: "/assets/gal16.jpeg",
+    thumb: "/assets/gal16.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 13",
+    title: "Perfect Day",
+  },
+  {
+    id: 25,
+    src: "/assets/gal17.jpeg",
+    thumb: "/assets/gal17.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 14",
+    title: "Perfect Day",
+  },
+  {
+    id: 26,
+    src: "/assets/gal18.jpeg",
+    thumb: "/assets/gal18.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 15",
+    title: "Perfect Day",
+  },
+  {
+    id: 27,
+    src: "/assets/gal19.jpeg",
+    thumb: "/assets/gal19.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 16",
+    title: "Perfect Day",
+  },
+  {
+    id: 28,
+    src: "/assets/gal20.jpeg",
+    thumb: "/assets/gal20.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 17",
+    title: "Perfect Day",
+  },
+  {
+    id: 29,
+    src: "/assets/gal21.jpeg",
+    thumb: "/assets/gal21.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 21",
+    title: "Perfect Day",
+  },
+  {
+    id: 30,
+    src: "/assets/gal22.jpeg",
+    thumb: "/assets/gal22.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 22",
+    title: "Perfect Day",
+  },
+  {
+    id: 31,
+    src: "/assets/gal23.jpeg",
+    thumb: "/assets/gal23.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 23",
+    title: "Perfect Day",
+  },
+  {
+    id: 32,
+    src: "/assets/gal24.jpeg",
+    thumb: "/assets/gal24.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 24",
+    title: "Perfect Day",
+  },
+  {
+    id: 33,
+    src: "/assets/gal25.jpeg",
+    thumb: "/assets/gal25.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 25",
+    title: "Perfect Day",
+  },
+  {
+    id: 34,
+    src: "/assets/gal26.jpeg",
+    thumb: "/assets/gal26.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 26",
+    title: "Perfect Day",
+  },
+  {
+    id: 35,
+    src: "/assets/gal27.jpeg",
+    thumb: "/assets/gal27.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 27",
+    title: "Perfect Day",
+  },
+
 ];
 
 const GalleryPage = () => {
@@ -170,8 +307,6 @@ const GalleryPage = () => {
     <div className="min-h-screen py-16 px-4">
       <div className="max-w-7xl mx-auto mt-16">
         {/* Header */}
-
-     
 
         <div className="text-center mb-16">
           <div className="relative inline-block">
@@ -287,6 +422,7 @@ const GalleryPage = () => {
           display: inline-block;
           width: 100%;
           margin-bottom: 1.5rem;
+          break-inside: avoid;
         }
 
         .lg-backdrop {
