@@ -19,14 +19,14 @@ const galleryImages = [
     alt: "Wedding Photo 1",
     title: "Beautiful Moments",
   },
-  {
-    id: 2,
-    src: "/assets/pic6.jpg",
-    thumb: "/assets/pic6.jpg",
-    size: "720-1280",
-    alt: "Wedding Photo 2",
-    title: "Love Story",
-  },
+  // {
+  //   id: 2,
+  //   src: "/assets/pic6.jpg",
+  //   thumb: "/assets/pic6.jpg",
+  //   size: "720-1280",
+  //   alt: "Wedding Photo 2",
+  //   title: "Love Story",
+  // },
   {
     id: 3,
     src: "/assets/pic1.JPG",
