@@ -139,6 +139,22 @@ const galleryImages = [
     alt: "Wedding Photo 7",
     title: "Perfect Day",
   },
+  {
+    id: 17,
+    src: "/assets/gal9.jpeg",
+    thumb: "/assets/gal9.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 7",
+    title: "Perfect Day",
+  },
+  {
+    id: 18,
+    src: "/assets/gal10.jpeg",
+    thumb: "/assets/gal10.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 7",
+    title: "Perfect Day",
+  },
 ];
 
 const GalleryPage = () => {
@@ -193,13 +209,13 @@ const GalleryPage = () => {
                 href={image.src}
                 data-lg-size={image.size}
                 className="gallery-item group cursor-pointer"
-                data-sub-html={`<h4>${image.title}</h4><p>${image.alt}</p>`}
+                // data-sub-html={`<h4>${image.title}</h4><p>${image.alt}</p>`}
               >
                 <div className="relative overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
                   <img
                     className="w-full h-auto object-cover transition-transform duration-300 group-hover:scale-110"
                     src={image.thumb}
-                    alt={image.alt}
+                    // alt={image.alt}
                     loading="lazy"
                   />
                   <div className="absolute inset-0 bg-black/0 group-hover:bg-black/20 transition-all duration-300 flex items-center justify-center">
@@ -228,7 +244,7 @@ const GalleryPage = () => {
         </div>
 
         {/* Stats */}
-        <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+        {/* <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-rose-600 mb-2">
@@ -245,7 +261,7 @@ const GalleryPage = () => {
               <div className="text-gray-600 font-medium">Perfect Day</div>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Custom Styles */}

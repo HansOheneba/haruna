@@ -38,21 +38,33 @@ export default function Header() {
             <ul className="hidden md:flex items-center gap-8 text-sm font-light text-[#1B1856]">
               {navLinks.map((link, index) => {
                 const isActive = pathname === link.href;
+                const isExternal = link.name === "RSVP Form";
                 return (
                   <li key={index}>
-                    <Link
-                      href={link.href}
-                      className={`
-                        relative transition-colors duration-200
-                        hover:text-[#C2A469]
-                        ${isActive ? "text-[#C2A469]" : "text-[#1B1856]"}
-                      `}
-                    >
-                      {link.name}
-                      {isActive && (
-                        <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-gradient-to-r from-[#C2A469] to-[#E6D7A3]" />
-                      )}
-                    </Link>
+                    {isExternal ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`relative transition-colors duration-200 hover:text-[#C2A469] ${
+                          isActive ? "text-[#C2A469]" : "text-[#1B1856]"
+                        }`}
+                      >
+                        {link.name}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className={`relative transition-colors duration-200 hover:text-[#C2A469] ${
+                          isActive ? "text-[#C2A469]" : "text-[#1B1856]"
+                        }`}
+                      >
+                        {link.name}
+                        {isActive && (
+                          <span className="absolute -bottom-1 left-0 w-full h-[1px] bg-gradient-to-r from-[#C2A469] to-[#E6D7A3]" />
+                        )}
+                      </Link>
+                    )}
                   </li>
                 );
               })}
@@ -77,23 +89,36 @@ export default function Header() {
             <ul className="py-2 space-y-2">
               {navLinks.map((link, index) => {
                 const isActive = pathname === link.href;
+                const isExternal = link.name === "RSVP Form";
                 return (
                   <li key={index}>
-                    <Link
-                      href={link.href}
-                      className={`
-                        block py-2 px-4 text-sm font-medium rounded-lg
-                        transition-all duration-200
-                        ${
+                    {isExternal ? (
+                      <a
+                        href={link.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className={`block py-2 px-4 text-sm font-medium rounded-lg transition-all duration-200 ${
                           isActive
                             ? "bg-[#F8F5EF] text-[#C2A469]"
                             : "text-[#1B1856] hover:bg-[#FAF8F3]"
-                        }
-                      `}
-                      onClick={() => setMenuOpen(false)}
-                    >
-                      {link.name}
-                    </Link>
+                        }`}
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {link.name}
+                      </a>
+                    ) : (
+                      <Link
+                        href={link.href}
+                        className={`block py-2 px-4 text-sm font-medium rounded-lg transition-all duration-200 ${
+                          isActive
+                            ? "bg-[#F8F5EF] text-[#C2A469]"
+                            : "text-[#1B1856] hover:bg-[#FAF8F3]"
+                        }`}
+                        onClick={() => setMenuOpen(false)}
+                      >
+                        {link.name}
+                      </Link>
+                    )}
                   </li>
                 );
               })}

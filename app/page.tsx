@@ -99,9 +99,7 @@ export default function WeddingPage() {
 
             <div className="space-y-4 sm:space-y-6 md:space-y-8">
               <p>
-                What started out as a shot in the dark with a harmless text
-                message turned out to be the unfolding of a love story that only
-                God could have written. <br /> Nana Yaa first caught Haruna’s eye over
+            Nana Yaa first caught Haruna’s eye over
                 a year before they would ever meet when Nicolette, a mutual
                 friend, posted a photo of Nana Yaa on her WhatsApp status. “This
                 your friend fine oo”, he remarked jokingly, and that was all it
@@ -114,7 +112,7 @@ export default function WeddingPage() {
                 all while singing Nana Yaa's praises, got him curious as to what
                 manner of woman this lady really was. And on the other side of
                 the link up, Nana Yaa miraculously gave Nicolette the go-ahead
-                for her contact to be given to Haruna. <br /> Neither of the two
+                for her contact to be given to Haruna. <br /><br /> Neither of the two
                 could’ve guessed that this was the beginning of a beautiful
                 journey of friendship and love, a deep connection that they
                 never saw coming. From their very first date to the many

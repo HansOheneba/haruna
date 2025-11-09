@@ -68,7 +68,7 @@ export default function Footer() {
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.8 }}
           >
-            <p className="text-gray-300 font-light italic">
+            <p className="text-white font-light italic">
               "Join us in celebrating the beginning of our forever"
             </p>
           </motion.div>

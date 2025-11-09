@@ -42,7 +42,7 @@ const faqs = [
   {
     question: "What time should I arrive at the venue?",
     answer:
-      "The ceremony will begin at _ prompt and all guests should be seated by _.",
+      "Please endeavour to be seated by 2pm so the program can proceed as scheduled.",
   },
   {
     question: "Will there be food and drinks served?",
@@ -127,7 +127,7 @@ const WeddingDetails = () => {
                   <div>
                     <p className="font-medium text-stone-800">Date</p>
                     <p className="text-stone-600">
-                      Saturday, December 20th, 2025
+                      Saturday, 20th December, 2025
                     </p>
                   </div>
                 </div>
@@ -171,10 +171,10 @@ const WeddingDetails = () => {
                   <span className="font-medium text-stone-800">5:00 PM</span>
                   <span className="text-stone-600">Reception</span>
                 </div>
-                <div className="flex justify-between items-center py-3 border-b border-stone-100">
+                {/* <div className="flex justify-between items-center py-3 border-b border-stone-100">
                   <span className="font-medium text-stone-800">8:00 PM</span>
                   <span className="text-stone-600">After Party</span>
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

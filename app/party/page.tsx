@@ -61,10 +61,10 @@ const WeddingParty = () => {
           <h1 className="font-serif text-4xl md:text-5xl text-white font-script mb-4">
             Our Wedding Party
           </h1>
-          <p className="text-md text-white max-w-2xl mx-auto">
+          {/* <p className="text-md text-white max-w-2xl mx-auto">
             We are so blessed to be surrounded by these wonderful friends and
             family as we begin our journey together.
-          </p>
+          </p> */}
         </motion.div>
 
         {/* Couple Section */}
