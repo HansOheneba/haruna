@@ -51,12 +51,13 @@ export default function WeddingPage() {
         {/* Main Content */}
         <div className="relative z-10 font-script flex flex-col items-center justify-center px-4">
           {/* Names */}
-          <h1 className=" text-4xl md:text-7xl font-thin text-white leading-tight tracking-wider">
-            NANA YAA <br className="block" /> DUAH
-          </h1>
-          <p className="text-white text-3xl font-thin md:text-3xl my-2">and</p>
           <h1 className=" text-4xl md:text-7xl font-thin text-white leading-tight tracking-wider mb-8">
             HARUNA <br className="hidden md:block" /> SULEMANA
+          </h1>
+          <p className="text-white text-3xl font-thin md:text-3xl my-2">and</p>
+
+          <h1 className=" text-4xl md:text-7xl font-thin text-white leading-tight tracking-wider">
+            NANA YAA <br className="block" /> DUAH
           </h1>
 
           {/* Countdown */}
@@ -99,26 +100,26 @@ export default function WeddingPage() {
 
             <div className="space-y-4 sm:space-y-6 md:space-y-8">
               <p>
-            Nana Yaa first caught Haruna’s eye over
-                a year before they would ever meet when Nicolette, a mutual
-                friend, posted a photo of Nana Yaa on her WhatsApp status. “This
-                your friend fine oo”, he remarked jokingly, and that was all it
-                was then - a quip between friends. But a year later, when the
-                same girl made another appearance on Nicolette’s WhatsApp
-                status, the sentiment graduated to a genuine request to be
-                “linked up“ with this beauty. Nicolette’s reaction to his
-                request, however, was what really piqued his interest. Her
-                earnest and emphatic cautions to Haruna to not “mess things up”,
-                all while singing Nana Yaa's praises, got him curious as to what
-                manner of woman this lady really was. And on the other side of
-                the link up, Nana Yaa miraculously gave Nicolette the go-ahead
-                for her contact to be given to Haruna. <br /><br /> Neither of the two
-                could’ve guessed that this was the beginning of a beautiful
-                journey of friendship and love, a deep connection that they
-                never saw coming. From their very first date to the many
-                memories since, the late-night car rides and endless
-                conversations, the evidence is undeniable that this story was
-                written with a Purpose by the Author Himself.
+                Nana Yaa first caught Haruna’s eye over a year before they would
+                ever meet when Nicolette, a mutual friend, posted a photo of
+                Nana Yaa on her WhatsApp status. “This your friend fine oo”, he
+                remarked jokingly, and that was all it was then - a quip between
+                friends. But a year later, when the same girl made another
+                appearance on Nicolette’s WhatsApp status, the sentiment
+                graduated to a genuine request to be “linked up“ with this
+                beauty. Nicolette’s reaction to his request, however, was what
+                really piqued his interest. Her earnest and emphatic cautions to
+                Haruna to not “mess things up”, all while singing Nana Yaa's
+                praises, got him curious as to what manner of woman this lady
+                really was. And on the other side of the link up, Nana Yaa
+                miraculously gave Nicolette the go-ahead for her contact to be
+                given to Haruna. <br />
+                <br /> Neither of the two could’ve guessed that this was the
+                beginning of a beautiful journey of friendship and love, a deep
+                connection that they never saw coming. From their very first
+                date to the many memories since, the late-night car rides and
+                endless conversations, the evidence is undeniable that this
+                story was written with a Purpose by the Author Himself.
               </p>
             </div>
 
@@ -139,7 +140,6 @@ export default function WeddingPage() {
       {/* Story Section */}
       <section className="py-16 bg-white">
         <div className="max-w-4xl mx-auto px-4 text-center">
-          
           {/* <div className="mb-8">
             <div className="flex justify-center">
               <div className="relative inline-block text-center">
