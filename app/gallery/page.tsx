@@ -107,14 +107,14 @@ const galleryImages = [
     alt: "Wedding Photo 7",
     title: "Perfect Day",
   },
-  // {
-  //   id: 13,
-  //   src: "/assets/gal6.jpeg",
-  //   thumb: "/assets/gal6.jpeg",
-  //   size: "1920-1080",
-  //   alt: "Wedding Photo 7",
-  //   title: "Perfect Day",
-  // },
+  {
+    id: 13,
+    src: "/assets/gal10.jpeg",
+    thumb: "/assets/gal10.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 7",
+    title: "Perfect Day",
+  },
   {
     id: 14,
     src: "/assets/gal6.jpeg",
@@ -134,7 +134,7 @@ const galleryImages = [
   {
     id: 16,
     src: "/assets/gal28.jpeg",
-    thumb: "/assets/gal8.jpeg",
+    thumb: "/assets/gal28.jpeg",
     size: "1920-1080",
     alt: "Wedding Photo 7",
     title: "Perfect Day",
@@ -149,8 +149,8 @@ const galleryImages = [
   // },
   {
     id: 18,
-    src: "/assets/gal10.jpeg",
-    thumb: "/assets/gal10.jpeg",
+    src: "/assets/gal31.jpeg",
+    thumb: "/assets/gal31.jpeg",
     size: "1920-1080",
     alt: "Wedding Photo 7",
     title: "Perfect Day",
