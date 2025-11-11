@@ -13,11 +13,11 @@ import lgZoom from "lightgallery/plugins/zoom";
 const galleryImages = [
   {
     id: 1,
-    src: "/assets/harunaMobi.jpg",
-    thumb: "/assets/harunaMobi.jpg",
+    src: "/assets/gal19.jpeg",
+    thumb: "/assets/gal19.jpeg",
     size: "1920-1080",
-    alt: "Wedding Photo 1",
-    title: "Beautiful Moments",
+    alt: "Wedding Photo 16",
+    title: "Perfect Day",
   },
   // {
   //   id: 2,
@@ -221,11 +221,11 @@ const galleryImages = [
   },
   {
     id: 27,
-    src: "/assets/gal19.jpeg",
-    thumb: "/assets/gal19.jpeg",
+    src: "/assets/harunaMobi.jpg",
+    thumb: "/assets/harunaMobi.jpg",
     size: "1920-1080",
-    alt: "Wedding Photo 16",
-    title: "Perfect Day",
+    alt: "Wedding Photo 1",
+    title: "Beautiful Moments",
   },
   // {
   //   id: 28,
@@ -291,7 +291,6 @@ const galleryImages = [
     alt: "Wedding Photo 27",
     title: "Perfect Day",
   },
-
 ];
 
 const GalleryPage = () => {
@@ -379,7 +378,7 @@ const GalleryPage = () => {
         </div>
 
         {/* Stats */}
-        {/* <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
+        <div className="bg-white/60 backdrop-blur-sm rounded-2xl p-8 shadow-lg">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
             <div>
               <div className="text-3xl font-bold text-rose-600 mb-2">
@@ -396,7 +395,7 @@ const GalleryPage = () => {
               <div className="text-gray-600 font-medium">Perfect Day</div>
             </div>
           </div>
-        </div> */}
+        </div>
       </div>
 
       {/* Custom Styles */}
