@@ -227,14 +227,14 @@ const galleryImages = [
     alt: "Wedding Photo 1",
     title: "Beautiful Moments",
   },
-  // {
-  //   id: 28,
-  //   src: "/assets/gal20.jpeg",
-  //   thumb: "/assets/gal20.jpeg",
-  //   size: "1920-1080",
-  //   alt: "Wedding Photo 17",
-  //   title: "Perfect Day",
-  // },
+  {
+    id: 28,
+    src: "/assets/gal30.jpeg",
+    thumb: "/assets/gal30.jpeg",
+    size: "1920-1080",
+    alt: "Wedding Photo 17",
+    title: "Perfect Day",
+  },
   {
     id: 29,
     src: "/assets/gal21.jpeg",
