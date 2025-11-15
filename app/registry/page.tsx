@@ -13,8 +13,16 @@ const WeddingRegistry = () => {
   };
 
   const momoNumbers = [
-    { number: "0209581240", provider: "Telecel Cash" },
-    { number: "0557382234", provider: "MTN MoMo" },
+    {
+      number: "0209581240",
+      provider: "Telecel Cash",
+      name: "Nana Yaa Duah",
+    },
+    {
+      number: "0557382234",
+      provider: "MTN MoMo",
+      name: "Haruna Sulemana",
+    },
   ];
 
   return (
@@ -57,7 +65,7 @@ const WeddingRegistry = () => {
           </p>
 
           <div className="space-y-6 mb-8">
-            {momoNumbers.map(({ number, provider }) => (
+            {momoNumbers.map(({ number, provider, name }) => (
               <div key={number} className="text-center">
                 <button
                   onClick={() => handleCopy(number)}
@@ -70,7 +78,11 @@ const WeddingRegistry = () => {
                   )}
                   <span className="font-medium text-stone-800">{number}</span>
                 </button>
+
                 <p className="text-sm text-stone-500 mt-1">{provider}</p>
+                <p className="text-sm text-stone-600 mt-1 font-medium">
+                  Name on account: {name}
+                </p>
               </div>
             ))}
           </div>
